@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  background: #212121;
+  margin: 0;
+  font-family: "Jost", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.rhap_container{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.rhap_time {
+  color: #fff !important;
+}
+
+.rhap_play-pause-button{
+  color: white!important;
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_play-pause-button:hover{
+  transform: scale(1.2);
+}
+
+.rhap_forward-button, .rhap_rewind-button, .rhap_skip-button, .rhap_volume-button, .rhap_repeat-button{
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_forward-button:hover, .rhap_rewind-button:hover, .rhap_skip-button:hover, .rhap_volume-button:hover, .rhap_repeat-button:hover{
+  transform: scale(1.2);
+  color : #ffffff !important;
+}
+
+.rhap_progress-filled{
+  background-color: white !important;
+}
+
+.rhap_progress-indicator, .rhap_volume-indicator{
+  background: white  !important;
+}
+
+.rhap_progress-indicator:hover, .rhap_volume-indicator:hover{
+  transform: scale(1.2);
+}
+
+.rhap_download-progress {
+  background-color: rgb(119, 119, 119) !important; 
+}
+
+.rhap_volume-bar {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.queue {
+  backdrop-filter: blur(10px);
+  opacity: 1.0;
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  font-size: 64px;
+}
+
+.note-1 {
+  animation: fading-notes 1.5s 1s infinite alternate ease-in backwards;
+}
+.note-2 {
+  animation: fading-notes 2s 2s infinite alternate ease-in backwards;
+}
+.note-3 {
+  animation: fading-notes 2.5s 0s infinite alternate ease-in backwards;
+}
+.note-4 {
+  animation: fading-notes 2s 1.5s infinite alternate ease-in backwards;
+}
+
+@keyframes fading-notes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
