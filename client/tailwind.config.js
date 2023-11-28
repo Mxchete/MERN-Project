@@ -44,15 +44,16 @@ module.exports = {
         "2xl": "1536px",
       },
       colors: {
-        headingColor: "#2e2e2e",
-        textColor: "#515151",
+        headingColor: "#b3b3b3",
+        textColor: "#ffffff",
         cartNumBg: "#e80013",
-        primary: "#f5f3f3",
+        primary: "#212121",
+        secondary: "#535353",
         cardOverlay: "rgba(256,256,256,0.4)",
         darkOverlay: "rgba(0,0,0,0.5)",
         lightOverlay: "rgba(256,256,256,0.2)",
-        lighttextGray: "#9ca0ab",
-        card: "rgba(256,256,256,0.8)",
+        lighttextGray: "#b3b3b3",
+        card: "#535353",
         cartBg: "#282a2c",
         cartItem: "#2e3033",
         cartTotal: "#343739",
@@ -60,7 +61,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    // require("tailwind-scrollbar")
-  ],
+  plugins: [require("tailwind-scrollbar")],
 };

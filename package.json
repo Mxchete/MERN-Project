@@ -1,0 +1,17 @@
+{
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
+  },
+  "scripts": {
+    "start": "cd server && npm run start && cd ../client && npm run start",
+    "heroku-postbuild": "cd server && npm i && cd ../client && npm i && cd .."
+  },
+  "dependencies": {
+    "moment": "^2.29.3",
+    "react-router-dom": "^6.20.0",
+    "react-tsparticles": "^2.12.2",
+    "three": "^0.158.0",
+    "tsparticles": "^2.12.0"
+  }
+}
